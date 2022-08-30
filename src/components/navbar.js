@@ -7,10 +7,8 @@ const Navbar = () => {
             <nav className="d-flex j-between">
                 <h1 className="font-primary size-2">Prestige</h1>
                 <ul className="d-flex j-around a-center">
-                    <li><a href="https://google.com" className="color-primary">Catalogo</a></li>
-                    <li><a href="https://google.com" className="color-primary px-2">Descuentos</a></li>
-                    <li><a href="https://google.com" className="color-primary">Ingresos</a></li>
-                    <CartWidget className='size-2 ml-2' id='iconshop'/>
+                    <li><a href="https://google.com" className="color-primary size-08">INICIAR SESION</a></li>
+                    <li><CartWidget className='size-2 ml-2' id='iconshop'/></li>
                 </ul>
             </nav>
         </header>
