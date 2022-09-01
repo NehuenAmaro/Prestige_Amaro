@@ -2,7 +2,7 @@ const home = () => {
   return (
     <section className="">
       <div className=" d-flex flex-d-column vh-90 j-center">
-        <img className="img-banner mb-2" src="./banner.png" alt="Dos hombres con traje"/>
+        <img id="banner" className="img-banner mb-2" src="./banner.png" alt="Dos hombres con traje"/>
 
         <ul className="d-flex j-around mx-auto vw-35 mt-1 size-08">
           <li>
@@ -19,6 +19,6 @@ const home = () => {
       </div>
     </section>
   );
-};
+}; 
 
 export default home;

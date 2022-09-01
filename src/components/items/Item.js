@@ -2,9 +2,9 @@ import ItemCount from "./ItemCount";
 import React, {useState} from "react"
 
 
-const Product = () => {
+const Item = ({items}) => {
 
-  const stock = 5
+  const stock = items.stock
   const [initial,setInitial] = useState(1)
 
   const Sumar = () => {
@@ -25,12 +25,12 @@ const Product = () => {
 
   return (
     <div className="d-flex flex-d-column card shadow">
-      <img className="img-card" src="./suite1.png" alt="Hombre con traje azul" />
+      <img className="img-card" src={items.img} alt={items.description} />
       <div className="info-card d-flex j-between px-10px">
         <h3 className="font-w-200 size-06 my-auto">
-          BLAZER TRAJE OJO DE PERDIZ
+          {items.name}
         </h3>
-        <h3 className="font-w-400 size-08">18.900,00</h3>
+        <h3 className="font-w-400 size-08">${items.price}</h3>
       </div>
 
       <ItemCount sumar={Sumar} restar={Restar} onadd={onAdd} initial={initial}/>
@@ -39,4 +39,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Item;
